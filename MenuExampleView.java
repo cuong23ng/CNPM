@@ -72,16 +72,6 @@ public class MenuExampleView extends JFrame {
 		
 		this.setVisible(true);
 		
-		GridLayout experimentLayout = new GridLayout(0,1);
-		
-		setSize(2, 2);
-		setLayout(experimentLayout);
-
-        JButton button1 = new JButton("Giấy tạm vắng");
-        add(button1);
-        
-        JButton button2 = new JButton("Giấy tạm trú");
-        add(button2);
 	}
 
 	public void setTextJLabel(String s) {
