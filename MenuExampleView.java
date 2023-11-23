@@ -11,6 +11,9 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
+import java.awt.*;
+import javax.swing.*;
+
 public class MenuExampleView extends JFrame {
 	private JLabel jLabel;
 	
@@ -68,6 +71,17 @@ public class MenuExampleView extends JFrame {
 		this.add(jLabel, BorderLayout.CENTER);
 		
 		this.setVisible(true);
+		
+		GridLayout experimentLayout = new GridLayout(0,1);
+		
+		setSize(2, 2);
+		setLayout(experimentLayout);
+
+        JButton button1 = new JButton("Giấy tạm vắng");
+        add(button1);
+        
+        JButton button2 = new JButton("Giấy tạm trú");
+        add(button2);
 	}
 
 	public void setTextJLabel(String s) {
